@@ -21,6 +21,7 @@ exports.createPaymentURL = (req, res, next) => {
     var createDate = dateFormat(date, "yyyymmddHHmmss");
     var orderId = dateFormat(date, "HHmmss");
     var amount = req.body.amount;
+    console.log(amount);
     var bankCode = req.body.bankCode || null;
 
     var orderInfo =

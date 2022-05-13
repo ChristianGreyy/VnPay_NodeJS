@@ -12,7 +12,7 @@ if (location.href.search("checkout") != -1) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        amount,
+        amount: amount * 23,
       }),
     });
     const data = await res.json();
